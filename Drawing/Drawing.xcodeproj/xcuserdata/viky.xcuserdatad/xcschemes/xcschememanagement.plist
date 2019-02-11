@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>StackView.xcscheme_^#shared#^_</key>
+		<key>Drawing.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>301468082210543C000B598E</key>
+		<key>30FB6FDC2211484D005E49A7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
