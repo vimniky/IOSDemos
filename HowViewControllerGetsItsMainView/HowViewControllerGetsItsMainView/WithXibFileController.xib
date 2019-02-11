@@ -1,12 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WithXibFileController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WithXibFileController" customModule="HowViewControllerGetsItsMainView" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -15,7 +19,22 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGE-6v-1oz">
+                    <rect key="frame" x="20" y="141" width="335" height="385.5"/>
+                    <mutableString key="text">When we created our UIViewController subclass, RootViewController, we saw in the Xcode dialog a checkbox offering to create an eponymous .xib file at the same time: “Also create XIB file.” We deliberately unchecked it. Suppose we had checked it; what would have happened? In that case, Xcode would have created RootView‐ Controller.swift and RootViewController.xib. Moreover, it would have configured RootViewController.xib for us: the File’s Owner’s class would already be set to the view controller’s class, RootViewController, and its view outlet would already be hooked up to the view. This view controller and .xib file are thus ready for use together: you instantiate the view controller with a nil nib name, and it gets its view from the eponymous nib.</mutableString>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.75630337680857807" green="0.79775783946691936" blue="0.95523184537887573" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="CGE-6v-1oz" secondAttribute="trailing" constant="20" id="O2N-6L-svW"/>
+                <constraint firstItem="CGE-6v-1oz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Wi9-lR-GSD"/>
+                <constraint firstItem="CGE-6v-1oz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="YFI-xR-J9z"/>
+                <constraint firstItem="CGE-6v-1oz" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="jcF-LY-luq"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>

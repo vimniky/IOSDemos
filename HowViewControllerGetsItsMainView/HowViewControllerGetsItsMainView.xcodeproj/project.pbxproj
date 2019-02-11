@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30EEC43E221196BB00366080 /* ViewFromNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30EEC43D221196BB00366080 /* ViewFromNib.xib */; };
+		30EEC44022119B3E00366080 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30EEC43F22119B3E00366080 /* RootViewController.xib */; };
+		30EEC44222119C5D00366080 /* RootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30EEC44122119C5D00366080 /* RootView.xib */; };
+		30EEC44522119E8100366080 /* WithXibFileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EEC44322119E8100366080 /* WithXibFileController.swift */; };
+		30EEC44622119E8100366080 /* WithXibFileController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30EEC44422119E8100366080 /* WithXibFileController.xib */; };
 		30FB700122118FBC005E49A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FB700022118FBC005E49A7 /* AppDelegate.swift */; };
-		30FB700322118FBC005E49A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FB700222118FBC005E49A7 /* ViewController.swift */; };
-		30FB700622118FBC005E49A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30FB700422118FBC005E49A7 /* Main.storyboard */; };
 		30FB700822118FBC005E49A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30FB700722118FBC005E49A7 /* Assets.xcassets */; };
 		30FB700B22118FBC005E49A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30FB700922118FBC005E49A7 /* LaunchScreen.storyboard */; };
+		30FB70132211906C005E49A7 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FB70122211906C005E49A7 /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30EEC43D221196BB00366080 /* ViewFromNib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewFromNib.xib; sourceTree = "<group>"; };
+		30EEC43F22119B3E00366080 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		30EEC44122119C5D00366080 /* RootView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootView.xib; sourceTree = "<group>"; };
+		30EEC44322119E8100366080 /* WithXibFileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithXibFileController.swift; sourceTree = "<group>"; };
+		30EEC44422119E8100366080 /* WithXibFileController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WithXibFileController.xib; sourceTree = "<group>"; };
 		30FB6FFD22118FBC005E49A7 /* HowViewControllerGetsItsMainView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HowViewControllerGetsItsMainView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30FB700022118FBC005E49A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30FB700222118FBC005E49A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		30FB700522118FBC005E49A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30FB700722118FBC005E49A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30FB700A22118FBC005E49A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30FB700C22118FBC005E49A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30FB70122211906C005E49A7 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +63,12 @@
 			isa = PBXGroup;
 			children = (
 				30FB700022118FBC005E49A7 /* AppDelegate.swift */,
-				30FB700222118FBC005E49A7 /* ViewController.swift */,
-				30FB700422118FBC005E49A7 /* Main.storyboard */,
+				30EEC44322119E8100366080 /* WithXibFileController.swift */,
+				30EEC44422119E8100366080 /* WithXibFileController.xib */,
+				30EEC44122119C5D00366080 /* RootView.xib */,
+				30EEC43F22119B3E00366080 /* RootViewController.xib */,
+				30FB70122211906C005E49A7 /* RootViewController.swift */,
+				30EEC43D221196BB00366080 /* ViewFromNib.xib */,
 				30FB700722118FBC005E49A7 /* Assets.xcassets */,
 				30FB700922118FBC005E49A7 /* LaunchScreen.storyboard */,
 				30FB700C22118FBC005E49A7 /* Info.plist */,
@@ -122,9 +134,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30EEC43E221196BB00366080 /* ViewFromNib.xib in Resources */,
 				30FB700B22118FBC005E49A7 /* LaunchScreen.storyboard in Resources */,
+				30EEC44222119C5D00366080 /* RootView.xib in Resources */,
+				30EEC44022119B3E00366080 /* RootViewController.xib in Resources */,
+				30EEC44622119E8100366080 /* WithXibFileController.xib in Resources */,
 				30FB700822118FBC005E49A7 /* Assets.xcassets in Resources */,
-				30FB700622118FBC005E49A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +150,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30FB700322118FBC005E49A7 /* ViewController.swift in Sources */,
+				30EEC44522119E8100366080 /* WithXibFileController.swift in Sources */,
 				30FB700122118FBC005E49A7 /* AppDelegate.swift in Sources */,
+				30FB70132211906C005E49A7 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		30FB700422118FBC005E49A7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				30FB700522118FBC005E49A7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		30FB700922118FBC005E49A7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
