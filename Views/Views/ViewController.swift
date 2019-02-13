@@ -9,12 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
     var v: UIView?
+    
+    @IBOutlet weak var bottomView: CustomUIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // V's x, y position(coodination) are relate to its superview
+        // Subviews' frame are expressed in terms of its directly supveiw's bound.
         addViews()
     }
     
