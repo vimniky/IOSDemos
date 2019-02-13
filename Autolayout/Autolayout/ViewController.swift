@@ -17,7 +17,8 @@ class ViewController: UIViewController {
         // autolayoutUsingAnchorNotation()
         // autolayoutDemoUsingVisualFormat()
         // moreOnVisualFormat()
-        safeAreaAndLayoutMarginsGuide()
+        // safeAreaAndLayoutMarginsGuide()
+        customLayoutGuideDemo()
     }
     
     fileprivate func autolayoutDemo() {
@@ -373,6 +374,89 @@ class ViewController: UIViewController {
             v2.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor),
             v2.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor),
             v2.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor),
+            ])
+    }
+    
+    func customLayoutGuideDemo() {
+        let v = UIView()
+        v.backgroundColor = .gray
+        
+        
+        let v1 = UIView()
+        v1.backgroundColor = .red
+        
+        let v2 = UIView()
+        v2.backgroundColor = .green
+        
+        let v3 = UIView()
+        v3.backgroundColor = .orange
+        
+        let v4 = UIView()
+        v4.backgroundColor = .cyan
+        
+        v.translatesAutoresizingMaskIntoConstraints = false
+        v1.translatesAutoresizingMaskIntoConstraints = false
+        v2.translatesAutoresizingMaskIntoConstraints = false
+        v3.translatesAutoresizingMaskIntoConstraints = false
+        v4.translatesAutoresizingMaskIntoConstraints = false
+        
+        view.addSubview(v)
+        view.addSubview(v1)
+        view.addSubview(v2)
+        view.addSubview(v3)
+        view.addSubview(v4)
+        
+        let views = [v1, v2, v3, v4]
+        
+        let guides = [
+            UILayoutGuide(),
+            UILayoutGuide(),
+            UILayoutGuide(),
+        ]
+        
+        for guide in guides {
+            view.addLayoutGuide(guide)
+        }
+        
+        NSLayoutConstraint.activate([
+            v.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            v.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            v.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            v.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            
+            guides[0].leadingAnchor.constraint(equalTo: v.leadingAnchor),
+            guides[1].leadingAnchor.constraint(equalTo: v.leadingAnchor),
+            guides[2].leadingAnchor.constraint(equalTo: v.leadingAnchor),
+            // Guides widthAnchor are aibitrary here,
+            guides[0].widthAnchor.constraint(equalToConstant: 1),
+            guides[1].widthAnchor.constraint(equalToConstant: 1),
+            guides[2].widthAnchor.constraint(equalToConstant: 1),
+            guides[1].heightAnchor.constraint(equalTo: guides[0].heightAnchor),
+            guides[2].heightAnchor.constraint(equalTo: guides[0].heightAnchor),
+            
+            views[0].bottomAnchor.constraint(equalTo: guides[0].topAnchor),
+            views[1].bottomAnchor.constraint(equalTo: guides[1].topAnchor),
+            views[2].bottomAnchor.constraint(equalTo: guides[2].topAnchor),
+            
+            views[1].topAnchor.constraint(equalTo: guides[0].bottomAnchor),
+            views[2].topAnchor.constraint(equalTo: guides[1].bottomAnchor),
+            views[3].topAnchor.constraint(equalTo: guides[2].bottomAnchor),
+            
+            views[0].leadingAnchor.constraint(equalTo: v.leadingAnchor),
+            views[0].trailingAnchor.constraint(equalTo: v.trailingAnchor),
+            views[1].leadingAnchor.constraint(equalTo: v.leadingAnchor),
+            views[1].trailingAnchor.constraint(equalTo: v.trailingAnchor),
+            views[2].leadingAnchor.constraint(equalTo: v.leadingAnchor),
+            views[2].trailingAnchor.constraint(equalTo: v.trailingAnchor),
+            views[3].leadingAnchor.constraint(equalTo: v.leadingAnchor),
+            views[3].trailingAnchor.constraint(equalTo: v.trailingAnchor),
+            
+            views[0].topAnchor.constraint(equalTo: v.topAnchor),
+            views[0].heightAnchor.constraint(equalToConstant: 60),
+            views[1].heightAnchor.constraint(equalTo: views[0].heightAnchor),
+            views[2].heightAnchor.constraint(equalTo: views[0].heightAnchor),
+            views[3].heightAnchor.constraint(equalTo: views[0].heightAnchor),
+            views[3].bottomAnchor.constraint(equalTo: v.bottomAnchor),
             ])
     }
     
