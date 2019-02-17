@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3011EFAE22198D6F00BD5BE5 /* ViewControllerLifeTimeEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewControllerLifeTimeEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3011EFAE22198D6F00BD5BE5 /* ViewControllerLifeTimeEvents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewControllerLifeTimeEvents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3011EFB122198D6F00BD5BE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3011EFB322198D6F00BD5BE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3011EFB622198D6F00BD5BE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 			isa = PBXGroup;
 			children = (
 				3011EFC322198DA800BD5BE5 /* README.md */,
-				3011EFB022198D6F00BD5BE5 /* ViewControllerLifeTimeEvent */,
+				3011EFB022198D6F00BD5BE5 /* ViewControllerLifeTimeEvents */,
 				3011EFAF22198D6F00BD5BE5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +48,12 @@
 		3011EFAF22198D6F00BD5BE5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3011EFAE22198D6F00BD5BE5 /* ViewControllerLifeTimeEvent.app */,
+				3011EFAE22198D6F00BD5BE5 /* ViewControllerLifeTimeEvents.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3011EFB022198D6F00BD5BE5 /* ViewControllerLifeTimeEvent */ = {
+		3011EFB022198D6F00BD5BE5 /* ViewControllerLifeTimeEvents */ = {
 			isa = PBXGroup;
 			children = (
 				3011EFB122198D6F00BD5BE5 /* AppDelegate.swift */,
@@ -63,15 +63,15 @@
 				3011EFBA22198D6F00BD5BE5 /* LaunchScreen.storyboard */,
 				3011EFBD22198D6F00BD5BE5 /* Info.plist */,
 			);
-			path = ViewControllerLifeTimeEvent;
+			path = ViewControllerLifeTimeEvents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3011EFAD22198D6F00BD5BE5 /* ViewControllerLifeTimeEvent */ = {
+		3011EFAD22198D6F00BD5BE5 /* ViewControllerLifeTimeEvents */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3011EFC022198D6F00BD5BE5 /* Build configuration list for PBXNativeTarget "ViewControllerLifeTimeEvent" */;
+			buildConfigurationList = 3011EFC022198D6F00BD5BE5 /* Build configuration list for PBXNativeTarget "ViewControllerLifeTimeEvents" */;
 			buildPhases = (
 				3011EFAA22198D6F00BD5BE5 /* Sources */,
 				3011EFAB22198D6F00BD5BE5 /* Frameworks */,
@@ -81,9 +81,9 @@
 			);
 			dependencies = (
 			);
-			name = ViewControllerLifeTimeEvent;
+			name = ViewControllerLifeTimeEvents;
 			productName = ViewControllerLifeTimeEvent;
-			productReference = 3011EFAE22198D6F00BD5BE5 /* ViewControllerLifeTimeEvent.app */;
+			productReference = 3011EFAE22198D6F00BD5BE5 /* ViewControllerLifeTimeEvents.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +101,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3011EFA922198D6F00BD5BE5 /* Build configuration list for PBXProject "ViewControllerLifeTimeEvent" */;
+			buildConfigurationList = 3011EFA922198D6F00BD5BE5 /* Build configuration list for PBXProject "ViewControllerLifeTimeEvents" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +114,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3011EFAD22198D6F00BD5BE5 /* ViewControllerLifeTimeEvent */,
+				3011EFAD22198D6F00BD5BE5 /* ViewControllerLifeTimeEvents */,
 			);
 		};
 /* End PBXProject section */
@@ -286,7 +286,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7LC6F7KK35;
-				INFOPLIST_FILE = ViewControllerLifeTimeEvent/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ViewControllerLifeTimeEvents/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +304,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7LC6F7KK35;
-				INFOPLIST_FILE = ViewControllerLifeTimeEvent/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ViewControllerLifeTimeEvents/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,7 +319,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3011EFA922198D6F00BD5BE5 /* Build configuration list for PBXProject "ViewControllerLifeTimeEvent" */ = {
+		3011EFA922198D6F00BD5BE5 /* Build configuration list for PBXProject "ViewControllerLifeTimeEvents" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3011EFBE22198D6F00BD5BE5 /* Debug */,
@@ -328,7 +328,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3011EFC022198D6F00BD5BE5 /* Build configuration list for PBXNativeTarget "ViewControllerLifeTimeEvent" */ = {
+		3011EFC022198D6F00BD5BE5 /* Build configuration list for PBXNativeTarget "ViewControllerLifeTimeEvents" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3011EFC122198D6F00BD5BE5 /* Debug */,
