@@ -19,9 +19,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = window ?? UIWindow()
         window?.makeKeyAndVisible()
         
-        createStoryboardFromScrach()
+        // createStoryboardFromScrach()
+        segueDemo()
         
         return true
+    }
+    
+    func segueDemo() {
+        let storyboard = UIStoryboard(name: "SegueDemo", bundle: nil)
+        let rvc = storyboard.instantiateInitialViewController()
+        window?.rootViewController = rvc
     }
     
     func createStoryboardFromScrach() {

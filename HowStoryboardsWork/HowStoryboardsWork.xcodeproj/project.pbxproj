@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3011EFA22219753400BD5BE5 /* SegueDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3011EFA12219753400BD5BE5 /* SegueDemo.storyboard */; };
+		3011EFA42219779100BD5BE5 /* SecondTabItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3011EFA32219779100BD5BE5 /* SecondTabItemViewController.swift */; };
 		30EEC4542211A2DB00366080 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EEC4532211A2DB00366080 /* AppDelegate.swift */; };
 		30EEC45B2211A2DC00366080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30EEC45A2211A2DC00366080 /* Assets.xcassets */; };
 		30EEC45E2211A2DC00366080 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30EEC45C2211A2DC00366080 /* LaunchScreen.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3011EFA12219753400BD5BE5 /* SegueDemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SegueDemo.storyboard; sourceTree = "<group>"; };
+		3011EFA32219779100BD5BE5 /* SecondTabItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabItemViewController.swift; sourceTree = "<group>"; };
 		30EEC4502211A2DB00366080 /* HowStoryboardsWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HowStoryboardsWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30EEC4532211A2DB00366080 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30EEC45A2211A2DC00366080 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +43,7 @@
 		30EEC4472211A2DB00366080 = {
 			isa = PBXGroup;
 			children = (
+				30EEC4652211A3A300366080 /* README.md */,
 				30EEC4522211A2DB00366080 /* HowStoryboardsWork */,
 				30EEC4512211A2DB00366080 /* Products */,
 			);
@@ -56,8 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				30EEC4532211A2DB00366080 /* AppDelegate.swift */,
-				30EEC4652211A3A300366080 /* README.md */,
 				30EEC4682211A73500366080 /* MyViewController.swift */,
+				3011EFA12219753400BD5BE5 /* SegueDemo.storyboard */,
+				3011EFA32219779100BD5BE5 /* SecondTabItemViewController.swift */,
 				30EEC4662211A6B500366080 /* MyMain.storyboard */,
 				30EEC45A2211A2DC00366080 /* Assets.xcassets */,
 				30EEC45C2211A2DC00366080 /* LaunchScreen.storyboard */,
@@ -125,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30EEC45E2211A2DC00366080 /* LaunchScreen.storyboard in Resources */,
+				3011EFA22219753400BD5BE5 /* SegueDemo.storyboard in Resources */,
 				30EEC4672211A6B500366080 /* MyMain.storyboard in Resources */,
 				30EEC45B2211A2DC00366080 /* Assets.xcassets in Resources */,
 			);
@@ -139,6 +146,7 @@
 			files = (
 				30EEC4692211A73500366080 /* MyViewController.swift in Sources */,
 				30EEC4542211A2DB00366080 /* AppDelegate.swift in Sources */,
+				3011EFA42219779100BD5BE5 /* SecondTabItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
