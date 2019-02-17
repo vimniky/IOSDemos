@@ -24,6 +24,7 @@
 		30EEC44122119C5D00366080 /* RootView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootView.xib; sourceTree = "<group>"; };
 		30EEC44322119E8100366080 /* WithXibFileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithXibFileController.swift; sourceTree = "<group>"; };
 		30EEC44422119E8100366080 /* WithXibFileController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WithXibFileController.xib; sourceTree = "<group>"; };
+		30EEC5ED2219270C00366080 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		30FB6FFD22118FBC005E49A7 /* HowViewControllerGetsItsMainView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HowViewControllerGetsItsMainView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30FB700022118FBC005E49A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30FB700722118FBC005E49A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,6 +47,7 @@
 		30FB6FF422118FBC005E49A7 = {
 			isa = PBXGroup;
 			children = (
+				30EEC5ED2219270C00366080 /* README.md */,
 				30FB6FFF22118FBC005E49A7 /* HowViewControllerGetsItsMainView */,
 				30FB6FFE22118FBC005E49A7 /* Products */,
 			);

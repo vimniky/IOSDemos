@@ -27,7 +27,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
         self.window = window ?? UIWindow()
         // let rv = RootViewController()
         
@@ -35,8 +34,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Don't forget to connect the File’s Owner view outlet to the View object.
         
         // let rv = RootViewController(nibName: "ViewFromNib", bundle: nil)
-        // let rv = RootViewController()
-        let rv = WithXibFileController()
+         let rv = RootViewController()
+//        let rv = WithXibFileController()
         window?.rootViewController = rv
         window?.backgroundColor = .white
         window?.makeKeyAndVisible()
