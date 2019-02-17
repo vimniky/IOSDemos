@@ -10,9 +10,14 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
-    @IBAction func back(_ sender: Any) {
+    @IBAction func prev(_ sender: Any) {
         self.presentingViewController?.dismiss(animated: true, completion: nil)
         // Or
         // dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func next(_ sender: Any) {
+        let tvc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ThirdViewController")
+        present(tvc, animated: true, completion: nil)
     }
 }
